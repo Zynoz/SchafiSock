@@ -1,3 +1,4 @@
+/* (C)2021 */
 package at.schafi.schafisock.dto;
 
 import at.schafi.schafisock.model.Product;

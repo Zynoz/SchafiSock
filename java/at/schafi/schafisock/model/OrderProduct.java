@@ -1,11 +1,11 @@
+/* (C)2021 */
 package at.schafi.schafisock.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import javax.persistence.*;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
-
-import javax.persistence.*;
 
 @Entity
 @Getter
@@ -13,11 +13,10 @@ import javax.persistence.*;
 @EqualsAndHashCode
 public class OrderProduct {
 
-    @EmbeddedId
-    @JsonIgnore
-    private OrderProductPK pk;
+    @EmbeddedId @JsonIgnore private OrderProductPK pk;
 
-    @Column(nullable = false) private Integer quantity;
+    @Column(nullable = false)
+    private Integer quantity;
 
     public OrderProduct() {
         super();

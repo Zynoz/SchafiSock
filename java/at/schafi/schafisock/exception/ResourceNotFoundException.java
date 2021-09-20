@@ -1,3 +1,4 @@
+/* (C)2021 */
 package at.schafi.schafisock.exception;
 
 public class ResourceNotFoundException extends RuntimeException {
